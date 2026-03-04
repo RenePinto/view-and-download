@@ -141,7 +141,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-[#004B8D] text-primary-foreground">
+      <header className="bg-[#004694] text-primary-foreground">
         <div className="max-w-[1600px] mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
@@ -173,7 +173,7 @@ const Index = () => {
       </header>
 
       {/* Title area */}
-      <div className="bg-[#003f75] text-primary-foreground pb-8 pt-4">
+      <div className="bg-[#003876] text-primary-foreground pb-8 pt-4">
         <div className="max-w-[1600px] mx-auto px-6">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight font-[Montserrat]">
             Views Sugeridas por GAP — Status Técnico
@@ -189,7 +189,7 @@ const Index = () => {
       {/* Summary Cards */}
       <div className="max-w-[1600px] mx-auto px-6 -mt-5">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-          <SummaryCard label="Total Itens" value={summary.total} color="bg-[#004B8D]" />
+          <SummaryCard label="Total Itens" value={summary.total} color="bg-[#004694]" />
           <SummaryCard label="GAP Crítico" value={summary.gap} color="bg-orange-500" />
           <SummaryCard label="Parcial" value={summary.parcial} color="bg-blue-500" />
           <SummaryCard label="Adaptação" value={summary.adapt} color="bg-violet-500" />
