@@ -145,9 +145,9 @@ const Index = () => {
         <div className="max-w-[1600px] mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
-              <img src="/logo-ctc.png" alt="CTC Health Intelligence" className="h-16 rounded-lg" />
+              <img src={`${import.meta.env.BASE_URL}logo-ctc.png`} alt="CTC Health Intelligence" className="h-16 rounded-lg" />
               <div className="hidden sm:block h-10 w-px bg-white/30" />
-              <img src="/logo-fastcomm.png" alt="Fastcomm" className="hidden sm:block h-12 rounded-lg" />
+              <img src={`${import.meta.env.BASE_URL}logo-fastcomm.png`} alt="Fastcomm" className="hidden sm:block h-12 rounded-lg" />
             </div>
             <div className="flex items-center gap-3">
               <Button
