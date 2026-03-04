@@ -252,8 +252,6 @@ const Index = () => {
                 <TableHead className="font-semibold text-foreground text-center w-20">Escopo</TableHead>
                 <TableHead className="font-semibold text-foreground">Status Técnico</TableHead>
                 <TableHead className="font-semibold text-foreground">Método Shift</TableHead>
-                <TableHead className="font-semibold text-foreground min-w-[300px]">Observação Negócio</TableHead>
-                <TableHead className="font-semibold text-foreground min-w-[250px]">Observação Técnica</TableHead>
                 <TableHead className="font-semibold text-foreground">View Sugerida</TableHead>
                 <TableHead className="w-10"></TableHead>
               </TableRow>
@@ -284,8 +282,6 @@ const Index = () => {
                       </Badge>
                     </TableCell>
                     <TableCell className="text-xs font-mono text-muted-foreground max-w-[160px] truncate">{row.metodoShift || "—"}</TableCell>
-                    <TableCell className="text-xs leading-relaxed">{row.obsNegocio}</TableCell>
-                    <TableCell className="text-xs leading-relaxed text-muted-foreground">{row.obsTecnica}</TableCell>
                     <TableCell className="text-xs font-mono text-[hsl(168,72%,35%)] max-w-[200px]">
                       <span className="break-all">{row.viewSugerida}</span>
                     </TableCell>
@@ -299,8 +295,16 @@ const Index = () => {
                   </TableRow>
                   {expandedRow === row.id && (
                     <TableRow key={`${row.id}-detail`} className="bg-muted/20 hover:bg-muted/20">
-                      <TableCell colSpan={10}>
-                        <div className="py-3 px-4 space-y-3">
+                      <TableCell colSpan={8}>
+                        <div className="py-3 px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div>
+                            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Observação Negócio</span>
+                            <p className="mt-1 text-sm text-foreground leading-relaxed">{row.obsNegocio}</p>
+                          </div>
+                          <div>
+                            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Observação Técnica</span>
+                            <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{row.obsTecnica}</p>
+                          </div>
                           <div>
                             <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Campos Mínimos</span>
                             <div className="mt-1 flex flex-wrap gap-1.5">
