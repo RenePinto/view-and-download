@@ -141,11 +141,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-[hsl(213,76%,26%)] text-primary-foreground">
+      <header className="bg-[#004B8D] text-primary-foreground">
         <div className="max-w-[1600px] mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
-              <img src="/logo-ctc.png" alt="CTC Health Intelligence" className="h-14 rounded-lg bg-white/90 px-3 py-1" />
+              <img src="/logo-ctc.png" alt="CTC Health Intelligence" className="h-16 rounded-lg" />
               <div className="hidden sm:block h-10 w-px bg-white/30" />
               <img src="/logo-fastcomm.png" alt="Fastcomm" className="hidden sm:block h-12 rounded-lg" />
             </div>
@@ -173,12 +173,12 @@ const Index = () => {
       </header>
 
       {/* Title area */}
-      <div className="bg-[hsl(213,76%,22%)] text-primary-foreground pb-8 pt-4">
+      <div className="bg-[#003f75] text-primary-foreground pb-8 pt-4">
         <div className="max-w-[1600px] mx-auto px-6">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight font-[Montserrat]">
             Views Sugeridas por GAP — Status Técnico
           </h1>
-          <p className="mt-2 text-sm text-blue-200 max-w-3xl">
+          <p className="mt-2 text-sm text-blue-100 max-w-3xl">
             Levantamento técnico realizado pelo <strong>Fastcomm</strong> para o projeto
             <strong> CTC Health Intelligence</strong>. Mapeamento de funcionalidades, GAPs de API e
             views de banco de dados sugeridas para o Portal do Cliente.
@@ -189,7 +189,7 @@ const Index = () => {
       {/* Summary Cards */}
       <div className="max-w-[1600px] mx-auto px-6 -mt-5">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-          <SummaryCard label="Total Itens" value={summary.total} color="bg-[hsl(213,76%,26%)]" />
+          <SummaryCard label="Total Itens" value={summary.total} color="bg-[#004B8D]" />
           <SummaryCard label="GAP Crítico" value={summary.gap} color="bg-orange-500" />
           <SummaryCard label="Parcial" value={summary.parcial} color="bg-blue-500" />
           <SummaryCard label="Adaptação" value={summary.adapt} color="bg-violet-500" />
