@@ -188,12 +188,10 @@ const Index = () => {
       <div className="bg-[#003876] text-primary-foreground pb-8 pt-4 relative z-10">
         <div className="max-w-[1600px] mx-auto px-6">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight font-[Montserrat]">
-            Views Sugeridas por GAP — Status Técnico
+            Análise de Views e Sugestões
           </h1>
           <p className="mt-2 text-sm text-blue-100 max-w-3xl">
-            Levantamento técnico realizado pelo <strong>Fastcomm</strong> para o projeto
-            <strong> CTC Health Intelligence</strong>. Mapeamento de funcionalidades, GAPs de API e
-            views de banco de dados sugeridas para o Portal do Cliente.
+            Levantamento técnico das views e campos necessários no projeto Analiza, especialmente para o <strong>Portal do Apoiado</strong>.
           </p>
         </div>
       </div>
