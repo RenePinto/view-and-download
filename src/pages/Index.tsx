@@ -331,12 +331,12 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[hsl(213,76%,22%)] text-blue-200 py-6">
+      <footer className="bg-[#004694] text-blue-200 py-6">
         <div className="max-w-[1600px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <img src="/logo-ctc.png" alt="CTC" className="h-8 rounded bg-white/90 px-2 py-0.5" />
+            <img src={`${import.meta.env.BASE_URL}logo-ctc.png`} alt="CTC" className="h-8 rounded" />
             <span className="text-xs">×</span>
-            <img src="/logo-fastcomm.png" alt="Fastcomm" className="h-7 rounded" />
+            <img src={`${import.meta.env.BASE_URL}logo-fastcomm.png`} alt="Fastcomm" className="h-7 rounded" />
           </div>
           <p className="text-xs text-center sm:text-right">
             Documento confidencial — CTC Health Intelligence & Fastcomm © {new Date().getFullYear()}
