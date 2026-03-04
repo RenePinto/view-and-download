@@ -142,7 +142,7 @@ const Index = () => {
     <div className="min-h-screen bg-background relative">
       {/* Background Mosaic Pattern */}
       <div 
-        className="fixed inset-0 z-0 opacity-[0.03] pointer-events-none mix-blend-multiply"
+        className="fixed inset-0 z-0 opacity-[0.05] pointer-events-none"
         style={{
           backgroundImage: `url(${import.meta.env.BASE_URL}mosaic-bg.png)`,
           backgroundRepeat: 'repeat',
