@@ -139,9 +139,21 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      {/* Background Mosaic Pattern */}
+      <div 
+        className="fixed inset-0 z-0 opacity-[0.03] pointer-events-none mix-blend-multiply"
+        style={{
+          backgroundImage: `url(${import.meta.env.BASE_URL}mosaic-bg.png)`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '400px',
+          backgroundPosition: 'top left',
+          backgroundAttachment: 'fixed'
+        }}
+      />
+
       {/* Header */}
-      <header className="bg-[#004694] text-primary-foreground">
+      <header className="bg-[#004694] text-primary-foreground relative z-10">
         <div className="max-w-[1600px] mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
@@ -173,7 +185,7 @@ const Index = () => {
       </header>
 
       {/* Title area */}
-      <div className="bg-[#003876] text-primary-foreground pb-8 pt-4">
+      <div className="bg-[#003876] text-primary-foreground pb-8 pt-4 relative z-10">
         <div className="max-w-[1600px] mx-auto px-6">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight font-[Montserrat]">
             Views Sugeridas por GAP — Status Técnico
@@ -187,7 +199,7 @@ const Index = () => {
       </div>
 
       {/* Summary Cards */}
-      <div className="max-w-[1600px] mx-auto px-6 -mt-5">
+      <div className="max-w-[1600px] mx-auto px-6 -mt-5 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
           <SummaryCard label="Total Itens" value={summary.total} color="bg-[#004694]" />
           <SummaryCard label="GAP Crítico" value={summary.gap} color="bg-orange-500" />
@@ -198,7 +210,7 @@ const Index = () => {
       </div>
 
       {/* Filters */}
-      <div className="max-w-[1600px] mx-auto px-6 mt-6">
+      <div className="max-w-[1600px] mx-auto px-6 mt-6 relative z-10">
         <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
           <div className="relative flex-1 max-w-md">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -241,7 +253,7 @@ const Index = () => {
       </div>
 
       {/* Table */}
-      <div className="max-w-[1600px] mx-auto px-6 mt-4 pb-12">
+      <div className="max-w-[1600px] mx-auto px-6 py-6 relative z-10">mt-4 pb-12">
         <div className="rounded-xl border bg-card shadow-sm overflow-hidden">
           <Table>
             <TableHeader>
@@ -331,7 +343,7 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#004694] text-blue-200 py-6">
+      <footer className="bg-[#004694] text-blue-200 py-6 relative z-10">
         <div className="max-w-[1600px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <img src={`${import.meta.env.BASE_URL}logo-ctc.png`} alt="CTC" className="h-8 rounded" />
